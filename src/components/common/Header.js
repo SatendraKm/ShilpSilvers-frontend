@@ -1,12 +1,15 @@
 import React from "react";
-import { FaReact } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <div className="Header container h-36 w-full flex justify-around ">
+    <div className="Header  h-36 w-full flex justify-around ">
       <div className="grid grid-cols-3 w-10/12 p-2 m-2 items-center">
         <div className="text-5xl p-2 flex flex-row justify-start">
-          <FaReact />
+          <img
+            src="https://logo.com/image-cdn/images/kts928pd/production/2305c171f221a8e43ef12e16ca0d91cecbb60160-414x420.png?w=1080&q=72"
+            alt="logo-ct"
+            className="h-14"
+          />
           <h1 className="mx-2 font-mono font-bold">Bijou</h1>
         </div>
         <div className="relative flex w-full justify-center h-1/2 items-center ">
@@ -14,18 +17,8 @@ const Header = () => {
             type="text"
             className="absolute outline-none border border-slate-300 rounded-l-sm p-1 w-full"
             placeholder="Search"
-            // value={SearchText}
-            // onChange={(e) => setSearchText(e.target.value)}
           />
-          <button
-            className=" absolute right-0 mx-2 text-slate-600"
-            // onClick={() => {
-            //   const filteredRestaurant = ListOfRestaurant.filter((res) =>
-            //     res.info.name.toLowerCase().includes(SearchText.toLowerCase())
-            //   );
-            //   setFilteredRestaurant(filteredRestaurant);
-            // }}
-          >
+          <button className=" absolute right-0 mx-2 text-slate-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

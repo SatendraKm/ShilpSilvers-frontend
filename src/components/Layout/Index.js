@@ -1,12 +1,14 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import Footer from "./Footer";
-import Header from "./Header";
-import Home from "./Home";
-import Product from "./Product";
+import Footer from "../common/Footer";
+import Header from "../common/Header";
+import Home from "../HomePage/Home";
+import Cart from "../Cart/Cart";
+import ErrorElement from "../common/ErrorElement";
+
 const Index = () => {
   const AppLayout = () => {
     return (
-      <div className="app container h-screen w-full">
+      <div>
         <Header />
         <Outlet />
         <Footer />
@@ -24,11 +26,11 @@ const Index = () => {
           element: <Home />,
         },
         {
-          path: "/Product",
-          element: <Product />,
+          path: "cart",
+          element: <Cart />,
         },
       ],
-      errorElement: "",
+      errorElement: <ErrorElement />,
     },
   ]);
   return (
