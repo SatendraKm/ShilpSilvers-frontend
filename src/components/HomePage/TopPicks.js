@@ -1,5 +1,6 @@
 import TopPicksData from "../../utils/TopPicksData";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const TopPicks = () => {
   const products = TopPicksData;
@@ -22,10 +23,10 @@ const TopPicks = () => {
             <div className="mt-4 flex justify-between">
               <div>
                 <h3 className="text-sm text-gray-700">
-                  <a href={product.href}>
+                  <Link to={product.href}>
                     <span aria-hidden="true" className="absolute inset-0" />
                     {product.name}
-                  </a>
+                  </Link>
                 </h3>
               </div>
               <p className="text-sm font-medium text-gray-900">

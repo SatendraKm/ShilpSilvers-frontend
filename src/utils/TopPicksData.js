@@ -7,7 +7,7 @@ const TopPicksData = [
   {
     id: 1,
     name: "Silver 999 box",
-    href: "#",
+    href: "/ProductDetail",
     imageSrc: img1,
     imageAlt: "silver box",
     price: "$35",
