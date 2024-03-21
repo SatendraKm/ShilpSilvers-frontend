@@ -1,5 +1,4 @@
 import AllProductsData from "../../utils/AllProductsData";
-import Breadcrumbs from "../common/Breadcrumbs";
 import { Dialog, Disclosure, Menu, Transition } from "@headlessui/react";
 import {
   ChevronDownIcon,

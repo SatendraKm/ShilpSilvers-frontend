@@ -1,12 +1,14 @@
-import CarouselComponent from "./CarouselComponent";
+import CategoryComponent from "./CategoryComponent";
 import CategoryPreview from "./CategoryPreview";
+import ProductCategory from "./ProductCategory";
 import TopPicks from "./TopPicks";
 import React from "react";
 
 const Home = () => {
   return (
-    <div className="">
-      <CarouselComponent />
+    <div>
+      <ProductCategory />
+      <CategoryComponent />
       <CategoryPreview />
       <TopPicks />
     </div>
