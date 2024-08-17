@@ -53,7 +53,7 @@ export default function Footer() {
         color="blue-gray"
         className="text-center opacity-75 font-normal"
       >
-        Made with ❤️ by Satendra
+        Made with ❤️ in India
       </Typography>
     </footer>
   );
